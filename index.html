@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made By Nishat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <h1>Shareable Resume Builder</h1>
+    <h2>Made By Nishat</h2>
+    <form id="resume-form">
+<fieldset>
+    <legend><b>Personal Information</b></legend>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter a unique username" required>
+    <label for="name"> Name: </label>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+    <label for="email"> Email: </label>
+    <input type="email" id="email" placeholder="Enter Your email" required>
+    <label for="Phone"> Phone: </label>
+    <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+
+</fieldset>
+
+<fieldset>
+    <legend><b>Education</b></legend>
+    <label for="education"> Education: </label>
+    <textarea id="education" placeholder="Enter Your Education" rows="6" ></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend><b>Experience</b></legend>
+    <label for="Experience"> Experience: </label>
+    <textarea id="experience" placeholder="Enter Your Work Experience" rows="4" ></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend><b>Skills</b></legend>
+    <label for="Skills"> Skills: </label>
+    <textarea id="skills" placeholder="Enter Your Work Skills" rows="4" ></textarea>
+
+</fieldset>
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+
+    <br>
+
+
+    <!-- Dynamic Resume -->
+     <div id="resume-display">
+        <!-- Resume will be generated below -->
+     </div>
+     <div class="download-button-container">
+        <button id="download-btn" style="display: none;"><b>Download as PDF</b></button>
+     </div>
+     
+     <div id="shareable-link-container" style="display: none;" class="share-container">
+        <h3>Shareable Link</h3>
+        <p>Share your resume using this link:</p>
+        <a id="shareable-link" href="#" target="_blank"></a>
+     </div>
+
+     <!-- Add html2pdf library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+     <script src="script.js"></script>
+
+</body>
+</html>
